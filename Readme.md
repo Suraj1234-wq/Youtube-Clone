@@ -29,4 +29,4 @@ This project replicates the layout and basic functionality of YouTube including 
 
 ## 📸 Screenshot
 
-![Project Screenshot]((./image/screenshot.png))
+![Project Screenshot](./image/screenshot.png)
