@@ -97,10 +97,13 @@ nav i {
 
 .box2 {
   height: 60px;
+  /* width: 220px; */
   display: flex;
   flex-direction: column;
   margin: 20px 0;
   border-radius: 1rem;
+
+
 }
 
 .box2:hover {
@@ -152,7 +155,7 @@ nav i {
   margin: 5px;
   border: none;
   padding: 6px;
-  font-weight: 550;
+  font-weight: 500;
   font-size: 15px;
   border-radius: 0.3rem;
   cursor: pointer;
@@ -185,6 +188,12 @@ nav i {
   padding: 0px 25px 0px 25px;
 }
 
+.box4 img {
+  transition:0.3s;
+}
+.box4 img:hover {
+  transform: scale(1.03);
+}
 .card .box4:hover {
   cursor: pointer;
 }
@@ -228,4 +237,119 @@ nav i {
 
 .card-bar i {
   font-size: 35px;
+}
+
+
+
+
+
+
+/* Responsive Clone */
+@media (max-width: 768px) {
+nav {
+  display: flex;
+  justify-content: center;
+}
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    padding: 0 50px 0 50px;
+  }
+  .search-bar {
+    width: 100%;
+  }
+  .navbar input {
+    width: 100%;
+  }
+  .navbar #man{
+    display: none;
+  }
+
+  .navbar #icon1{
+    display: none;
+  }
+  .navbar button{
+    display: none;
+  }
+  .navbar .icon{
+    display: none;
+  }
+
+  .box3 {
+    display: none;
+  }
+
+  .btn {
+    /* width: 100%; */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn1 {
+    width: 70%;
+    /* padding-right:100px ; */
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* padding: 10px; */
+    scrollbar-width: none;
+  }
+
+  /* Hide scrollbar Chrome */
+  .btn1::-webkit-scrollbar{
+    display: none;
+  }
+
+  .btn1 button {
+    flex: 0 0 auto;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    /* background: #eee; */
+    cursor: pointer;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap: 100px;
+    justify-content: center;
+    padding: 20px;
+  }
+   .card1 {
+    display: grid;
+     grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap: 100px;
+    padding: 20px;
+  }
+
+  .box4 {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .box4 a img{
+  display: grid;
+  width: 100%;
+  border-radius: 10px;
+  flex-direction: column;
+  }
+
+  /* .box2 {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    border-top: 1px solid #ddd;
+    z-index: 1000;
+  } */
 }
